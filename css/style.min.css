@@ -228,7 +228,7 @@ body.lock {
   }
 }
 
-.banner-section__link {
+.premium-section__link, .banner-section__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,15 +242,15 @@ body.lock {
   transition: 0.3s;
 }
 @media (max-width: 1240px) {
-  .banner-section__link {
+  .premium-section__link, .banner-section__link {
     font-size: calc(10px + 4 * ((100vw - 360px) / 880));
   }
 }
-.banner-section__link:focus {
+.premium-section__link:focus, .banner-section__link:focus {
   box-shadow: 0 0 5px 2px #2243a4;
 }
 @media (any-hover: hover) {
-  .banner-section__link:hover {
+  .premium-section__link:hover, .banner-section__link:hover {
     box-shadow: 0 0 5px 2px #2243a4;
   }
 }
@@ -812,10 +812,10 @@ body.lock {
   background: linear-gradient(180deg, #2f59d3 0%, rgba(8, 38, 127, 0) 100%);
   border-radius: 50%;
   overflow: hidden;
-  filter: blur(125px);
+  filter: blur(100px);
 }
 .decor-banner__item_1 {
-  filter: blur(100px);
+  filter: blur(80px);
   top: 4px;
   left: -232px;
   width: 464px;
@@ -871,7 +871,7 @@ body.lock {
   top: 5px;
   right: 289px;
   background: linear-gradient(180deg, #009fdf 0%, rgba(8, 38, 127, 0) 100%);
-  filter: blur(100px);
+  filter: blur(80px);
 }
 @media (max-width: 992px) {
   .decor-banner__item_3 {
@@ -884,7 +884,7 @@ body.lock {
   width: 493.67px;
   height: 493.67px;
   background: #009fdf;
-  filter: blur(200px);
+  filter: blur(160px);
 }
 @media (max-width: 992px) {
   .decor-banner__item_4 {
@@ -1034,7 +1034,8 @@ body.lock {
   width: 442px;
   height: 440px;
   background: #009fdf;
-  filter: blur(200px);
+  border-radius: 50%;
+  filter: blur(160px);
   transform: matrix(0.97, 0, -0.26, 1, 0, 0);
 }
 
@@ -1062,6 +1063,19 @@ body.lock {
     display: none;
   }
 }
+.premium-section__slider {
+  margin-bottom: 59px;
+}
+@media (max-width: 1240px) {
+  .premium-section__slider {
+    margin-bottom: calc(29px + 30 * ((100vw - 360px) / 880));
+  }
+}
+.premium-section__link {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
 .slider-premium__inner {
   margin-bottom: 60px;
 }
@@ -1210,8 +1224,9 @@ body.lock {
   position: absolute;
   z-index: -1;
   background: #009fdf;
+  border-radius: 50%;
+  filter: blur(160px);
   transform: matrix(0.97, 0, -0.26, 1, 0, 0);
-  filter: blur(200px);
   top: 172px;
   right: 333px;
   width: 323px;
