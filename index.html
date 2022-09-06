@@ -279,6 +279,65 @@
 		<div class="simple-decor__item"></div>
 	</div>
 </section>
+			<section class="calc-section">
+	<div class="calc-section__container">
+		<div class="calc-section__title">Калькулятор лизинга</div>
+		<form action="#" class="calc-section__form form-calc" id="form-calc">
+			<div class="form-calc__item" style="--range-value: 5560000; --range-max: 25000000; --range-min: 400000;">
+				<div class="form-calc__info">
+					<div class="form-calc__label">СТОИМОСТЬ АВТОМОБИЛЯ</div>
+					<div class="form-calc__result"><span>5 560 000</span> ₽</div>
+					<input type="range" name="form-calc-price" id="form-calc-price" class="form-calc__input" min="400000" max="25000000" value="5560000">
+				</div>
+				<div class="form-calc__range range-form-calc">
+					<div class="range-form-calc__item">400 000 ₽</div>
+					<div class="range-form-calc__item">25 000 000 ₽</div>
+				</div>
+			</div>
+			<div class="form-calc__item" style="--range-value: 36; --range-max: 60; --range-min: 11;">
+				<div class="form-calc__info">
+					<div class="form-calc__label">СРОК ЛИЗИНГА</div>
+					<div class="form-calc__result"><span>36</span> месяцев</div>
+					<input type="range" name="form-calc-period" id="form-calc-period" class="form-calc__input" min="11" max="60" value="36">
+				</div>
+				<div class="form-calc__range range-form-calc">
+					<div class="range-form-calc__item">11 месяцев</div>
+					<div class="range-form-calc__item">60 месяцев</div>
+				</div>
+			</div>
+			<div class="form-calc__item" style="--range-value: 2724400; --range-max: 5000000; --range-min: 0;">
+				<div class="form-calc__info">
+					<div class="form-calc__label">Аванс</div>
+					<div class="form-calc__result"><span>49</span> %</div>
+					<input type="range" name="form-calc-prepaid" id="form-calc-prepaid" class="form-calc__input" min="0" max="5000000" value="2724400">
+				</div>
+				<div class="form-calc__range range-form-calc">
+					<div class="range-form-calc__item">0 ₽</div>
+					<div class="range-form-calc__item range-form-calc__item_current"><span>2 724 400</span> ₽</div>
+					<div class="range-form-calc__item">5 000 000 ₽</div>
+				</div>
+			</div>
+			<div class="form-calc__item" style="--range-value: 10; --range-max: 30; --range-min: 0.01;">
+				<div class="form-calc__info">
+					<div class="form-calc__label">ВЫКУПНОЙ ПЛАТЕЖ</div>
+					<div class="form-calc__result"><span>10</span> %</div>
+					<input type="range" name="form-calc-redemtion" id="form-calc-redemtion" class="form-calc__input" min="0.01" max="30" step="0.01" value="10">
+				</div>
+				<div class="form-calc__range range-form-calc">
+					<div class="range-form-calc__item">0,01 %</div>
+					<div class="range-form-calc__item range-form-calc__item_current"><span>556 000</span> ₽</div>
+					<div class="range-form-calc__item">30 %</div>
+				</div>
+			</div>
+		</form>
+		<div class="calc-section__result result-calc">
+			<div class="result-calc__item"><span>Ежемесячный платеж - </span>80 070 ₽</div>
+			<div class="result-calc__item"><span>Налоговая выгода - </span>2 054 308 ₽</div>
+			<div class="result-calc__item"><span>Сумма договора - </span>6 162 926 ₽</div>
+		</div>
+		<a href="#" class="calc-section__link">Консультация</a>
+	</div>
+</section>
 			<section class="cooperation-section">
 	<div class="cooperation-section__container">
 		<div class="cooperation-section__header">
