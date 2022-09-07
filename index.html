@@ -283,43 +283,116 @@
 	<div class="catalog-section__container">
 		<div class="catalog-section__title">Каталог автомобилей премиум-класса</div>
 		<div class="catalog-section__inner">
-			<div data-spollers="992,max" data-one-spoller class="catalog-section__spoller spoller-catalog">
-				<div class="spoller-catalog__item">
-					<button data-spoller class="spoller-catalog__title">Фильтр<span></span></button>
-					<div class="spoller-catalog__filter filter-catalog">
-						<div data-spollers data-one-spoller class="filter-catalog__spoller spoller-filter">
-							<article class="spoller-filter__item">
-								<button data-spoller class="spoller-filter__title">Марка<span></span></button>
-								<div class="spoller-filter__text"></div>
-							</article>
-							<article class="spoller-filter__item">
-								<button data-spoller class="spoller-filter__title">Тип кузова<span></span></button>
-								<div class="spoller-filter__text"></div>
-							</article>
-							<article class="spoller-filter__item">
-								<button data-spoller class="spoller-filter__title">Привод<span></span></button>
-								<div class="spoller-filter__text"></div>
-							</article>
-							<article class="spoller-filter__item">
-								<button data-spoller class="spoller-filter__title">Регион<span></span></button>
-								<div class="spoller-filter__text"></div>
-							</article>
-							<article class="spoller-filter__item">
-								<button data-spoller class="spoller-filter__title">Цвет<span></span></button>
-								<div class="spoller-filter__text"></div>
-							</article>
-							<article class="spoller-filter__item">
-								<button data-spoller class="spoller-filter__title">Тип топлива<span></span></button>
-								<div class="spoller-filter__text"></div>
-							</article>
-							<article class="spoller-filter__item">
-								<button data-spoller class="spoller-filter__title">Стоимость автомобиля ₽<span></span></button>
-								<div class="spoller-filter__text"></div>
-							</article>
+			<form action="#" id="catalog-form" class="catalog-section__spoller spoller-catalog">
+				<div class="spoller-catalog__title">Фильтр<span></span></div>
+				<div data-spollers data-one-spoller class="spoller-catalog__filter spoller-filter" hidden>
+					<div class="spoller-filter__item">
+						<div data-spoller class="spoller-filter__title">Марка<span></span></div>
+						<div class="spoller-filter__inner">
+							<div class="spoller-filter__inputs">
+								<input checked="checked" type="radio" name="brand" id="catalog-form-audi" value="audi">
+								<label for="catalog-form-audi">Audi</label>
+								<input type="radio" name="brand" id="catalog-form-bmw" value="bmw">
+								<label for="catalog-form-bmw">BMW</label>
+								<input type="radio" name="brand" id="catalog-form-mercedes" value="mercedes">
+								<label for="catalog-form-mercedes">Mercedes</label>
+								<input type="radio" name="brand" id="catalog-form-rangeRover" value="range rover">
+								<label for="catalog-form-rangeRover">Range Rover</label>
+							</div>
+						</div>
+					</div>
+					<div class="spoller-filter__item">
+						<div data-spoller class="spoller-filter__title">Тип кузова<span></span></div>
+						<div class="spoller-filter__inner">
+							<div class="spoller-filter__inputs">
+								<input checked="checked" type="radio" name="type" id="catalog-form-sedan" value="Седан">
+								<label for="catalog-form-sedan">Седан</label>
+								<input type="radio" name="type" id="catalog-form-universal" value="Универсал">
+								<label for="catalog-form-universal">Универсал</label>
+								<input type="radio" name="type" id="catalog-form-cupe" value="Купе">
+								<label for="catalog-form-cupe">Купе</label>
+								<input type="radio" name="type" id="catalog-form-cabriolet" value="Кабриолет">
+								<label for="catalog-form-cabriolet">Кабриолет</label>
+							</div>
+						</div>
+					</div>
+					<div class="spoller-filter__item">
+						<div data-spoller class="spoller-filter__title">Привод<span></span></div>
+						<div class="spoller-filter__inner">
+							<div class="spoller-filter__inputs">
+								<input checked="checked" type="radio" name="drive" id="catalog-form-front" value="передний">
+								<label for="catalog-form-front">передний</label>
+								<input type="radio" name="drive" id="catalog-form-back" value="задний">
+								<label for="catalog-form-back">задний</label>
+								<input type="radio" name="drive" id="catalog-form-all" value="полный">
+								<label for="catalog-form-all">полный</label>
+							</div>
+						</div>
+					</div>
+					<div class="spoller-filter__item">
+						<div data-spoller class="spoller-filter__title">Регион<span></span></div>
+						<div class="spoller-filter__inner">
+							<div class="spoller-filter__inputs">
+								<input checked="checked" type="radio" name="region" id="catalog-form-south" value="Южный">
+								<label for="catalog-form-south">Южный</label>
+								<input type="radio" name="region" id="catalog-form-privoljski" value="Приволжский">
+								<label for="catalog-form-privoljski">Приволжский</label>
+								<input type="radio" name="region" id="catalog-form-sibir" value="Сибирский">
+								<label for="catalog-form-sibir">Сибирский</label>
+								<input type="radio" name="region" id="catalog-form-north-caucas" value="Северо-Кавказский">
+								<label for="catalog-form-north-caucas">Северо-Кавказский</label>
+								<input type="radio" name="region" id="catalog-form-north-west" value="Северо-Западный">
+								<label for="catalog-form-north-west">Северо-Западный</label>
+								<input type="radio" name="region" id="catalog-form-east" value="Дальневосточный">
+								<label for="catalog-form-east">Дальневосточный</label>
+								<input type="radio" name="region" id="catalog-form-center" value="Центральный">
+								<label for="catalog-form-center">Центральный</label>
+							</div>
+						</div>
+					</div>
+					<div class="spoller-filter__item">
+						<div data-spoller class="spoller-filter__title">Цвет<span></span></div>
+						<div class="spoller-filter__inner">
+							<div class="spoller-filter__inputs">
+								<input checked="checked" type="radio" name="color" id="catalog-form-black" value="черный">
+								<label for="catalog-form-black">черный</label>
+								<input type="radio" name="color" id="catalog-form-white" value="белый">
+								<label for="catalog-form-white">белый</label>
+								<input type="radio" name="color" id="catalog-form-red" value="красный">
+								<label for="catalog-form-red">красный</label>
+							</div>
+						</div>
+					</div>
+					<div class="spoller-filter__item">
+						<div data-spoller class="spoller-filter__title">Тип топлива<span></span></div>
+						<div class="spoller-filter__inner">
+							<div class="spoller-filter__inputs">
+								<input checked="checked" type="radio" name="fuel" id="catalog-form-petrol" value="бензин">
+								<label for="catalog-form-petrol">бензин</label>
+								<input type="radio" name="fuel" id="catalog-form-diesel" value="дизель">
+								<label for="catalog-form-diesel">дизель</label>
+							</div>
+						</div>
+					</div>
+					<div class="spoller-filter__item">
+						<div data-spoller class="spoller-filter__title">Стоимость автомобиля ₽<span></span></div>
+						<div class="spoller-filter__inner">
+							<div class="spoller-filter__price price-catalog">
+								<div class="price-catalog__item">
+									<div class="price-catalog__label">от</div>
+									<div class="price-catalog__value" id="price-catalog-value-from"><span>4&nbsp;000&nbsp;000</span> |</div>
+								</div>
+								<div class="price-catalog__item">
+									<div class="price-catalog__label">до</div>
+									<div class="price-catalog__value" id="price-catalog-value-to"><span>75&nbsp;000&nbsp;000</span> |</div>
+								</div>
+							</div>
+							<div class="spoller-filter__range"></div>
 						</div>
 					</div>
 				</div>
-			</div>
+				<div class="spoller-catalog__button"><button type="submit">Подобрать авто</button></div>
+			</form>
 			<div class="catalog-section__content">
 				<div class="catalog-section__image-ibg">
 					<img src="img/images/home/catalog/1.png" alt="Catalog section image" width="574" height="295">
