@@ -2669,29 +2669,61 @@ body.lock {
 }
 
 .popup-form__select {
+  position: relative;
+}
+
+.popup-form__select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
-  min-height: 36px;
+  padding: 10.5px 0;
   font-family: "HelveticaNeueCyr", sans-serif;
   font-size: 15px;
   color: #e4e4e4;
   background: none;
+  border: 0;
   border-bottom: 1px solid #e4e4e4;
+  outline: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.popup-form__select:focus {
+.popup-form__select select:focus {
   color: #009fdf;
   border-color: #009fdf;
 }
 
-.popup-form__select option {
+.popup-form__select select:focus + span {
+  border-color: #009fdf;
+  -webkit-transform: translateY(-50%) rotate(225deg);
+  -ms-transform: translateY(-50%) rotate(225deg);
+  transform: translateY(-50%) rotate(225deg);
+}
+
+.popup-form__select select option {
   font-family: "HelveticaNeueCyr", sans-serif;
   font-size: 15px;
   color: #02091e;
   cursor: pointer;
+}
+
+.popup-form__select span {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  -ms-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .popup-form__button {
