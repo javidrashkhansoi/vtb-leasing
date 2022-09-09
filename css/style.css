@@ -1341,6 +1341,8 @@ body.lock {
 
 .slider-premium__discount {
   position: absolute;
+  top: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1359,8 +1361,6 @@ body.lock {
   background: linear-gradient(180deg, #292929 0%, rgba(41, 41, 41, 0) 100%);
   border: 1px solid #08267f;
   border-radius: 50%;
-  top: 108px;
-  right: -58px;
   width: 86px;
   height: 86px;
   font-size: 12px;
@@ -1377,6 +1377,9 @@ body.lock {
   -webkit-transform: translateY(-50%) rotate(45deg);
   -ms-transform: translateY(-50%) rotate(45deg);
   transform: translateY(-50%) rotate(45deg);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -1776,6 +1779,17 @@ body.lock {
   padding-bottom: 28px;
   max-width: 1080px;
   font-size: 16px;
+}
+
+.spoller-faq__text a {
+  color: rgb(111, 168, 220);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.spoller-faq__text a:focus {
+  color: #009fdf;
 }
 
 .company-section__text {
@@ -2270,6 +2284,14 @@ body.lock {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.spoller-catalog__filter {
+  max-height: 5000em;
+}
+
+.spoller-filter__item {
+  max-height: 5000em;
 }
 
 .spoller-filter__item:not(:nth-last-child(-n+2)) {
@@ -2786,9 +2808,8 @@ body.lock {
   }
 
   .slider-premium__content {
-    -ms-flex-item-align: end;
-    align-self: end;
-    padding-bottom: 50px;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
 
   .options-section__inner {
@@ -3180,14 +3201,6 @@ body.lock {
 
   .slider-premium__text {
     font-size: calc(12px + 6 * ((100vw - 360px) / 880));
-  }
-
-  .slider-premium__discount {
-    top: calc(-35px + 143 * ((100vw - 360px) / 880));
-  }
-
-  .slider-premium__discount {
-    right: calc(8px + -66 * ((100vw - 360px) / 880));
   }
 
   .slider-premium__discount {
@@ -3946,6 +3959,10 @@ body.lock {
   .banner-section__link:hover {
     -webkit-box-shadow: 0 0 5px 2px #2243a4;
     box-shadow: 0 0 5px 2px #2243a4;
+  }
+
+  .spoller-faq__text a:hover {
+    color: #009fdf;
   }
 
   .spoller-filter__inputs label:hover {
